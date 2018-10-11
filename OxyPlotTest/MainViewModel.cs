@@ -17,7 +17,7 @@ namespace OxyPlotTest
             BarSeries bar = new BarSeries();
             this.MyModel.Series.Add(ser);
             this.MyModel.Series.Add(bar);
-            
+            //Test
 
         }
 
