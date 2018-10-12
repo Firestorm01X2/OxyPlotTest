@@ -12,6 +12,7 @@ namespace OxyPlotTest
     {
         public MainViewModel()
         {
+            //comment
             this.MyModel = new PlotModel { Title = "Example 1" };
             FunctionSeries ser = new FunctionSeries();
             BarSeries bar = new BarSeries();
