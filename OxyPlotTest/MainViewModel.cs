@@ -15,6 +15,7 @@ namespace OxyPlotTest
             //comment
             this.MyModel = new PlotModel { Title = "Example 1" };
             FunctionSeries ser = new FunctionSeries();
+            // bar
             BarSeries bar = new BarSeries();
             this.MyModel.Series.Add(ser);
             this.MyModel.Series.Add(bar);
