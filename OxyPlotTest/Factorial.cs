@@ -8,7 +8,7 @@ namespace OxyPlotTest
 {
    public class Factorial
     {
-        int Calculate_Factorial(int a)
+        public int Calculate_Factorial(int a)
         {
             int result=1;
             for (int i = 1; i < a; i++)

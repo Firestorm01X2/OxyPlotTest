@@ -10,7 +10,7 @@
     <Window.DataContext>
         <local:MainViewModel/>
     </Window.DataContext>
-
+    <StackPanel>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -19,4 +19,13 @@
         <oxy:PlotView Model="{Binding MyModel}" Grid.Row="0" x:Name ="graph1"/>
         <Button Content="Paint" Grid.Row="1" Width="100" HorizontalAlignment="Right" Margin="0,0,10,10" Click="Button_Click"></Button>
     </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="arg" Grid.Column="0" ></TextBox>
+            <Button Grid.Column="1" Content="Calculate" Click="Button_Click_1"></Button>
+        </Grid>
+    </StackPanel>
 </Window>

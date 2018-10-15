@@ -36,5 +36,13 @@ namespace OxyPlotTest
 
            //(graph1.Model.Series[1] as BarSeries).Items.Add(new BarItem(3));
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            int a = Convert.ToInt32(arg.Text);
+            Factorial factor = new Factorial();
+            int b = factor.Calculate_Factorial(a);
+            MessageBox.Show(Convert.ToString(b));
+        }
     }
 }
