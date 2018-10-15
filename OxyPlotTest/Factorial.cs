@@ -10,9 +10,11 @@ namespace OxyPlotTest
     {
         public int Calculate_Factorial(int a)
         {
-            int result=1;
-            for (int i = 1; i < a; i++)
-                result *= a;
+            if (a < 0)
+                throw new ArgumentException("error of input");            int result=1;
+            for (int i = 1; i <=a; i++)
+                result *= i;
+            
             return result;
         }
     }
